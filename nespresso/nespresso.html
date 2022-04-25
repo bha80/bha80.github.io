@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nespresso.css">
+    <title>Nespresso</title>
+</head>
+
+<body>
+    <div class="mainContainer">
+        <div id="top">
+            <div class="logo">
+                <img alt="Home" src="./logo.JPG" class="Header__logo">
+            </div>
+            <div class="header">
+                <h2>Already a Nespresso customer?</h2>
+                <p>Select "Yes" for the question "Have you ever bought Nespresso coffee?"</p>
+                <p>Indicate your client number & postal code</p>
+                <p>Then you can continuously benefit from the rewards program.</p>
+            </div>
+        </div>
+        <form action="#" method="post">
+            <div class="middle">
+                <div class="middleText">
+                    <p>Have you placed an online order before?</p>
+                    <p>Then you already have an online account and you can log-in here.</p>
+                    <p>If not, you can activate your online account below and place your first online order.</p>
+                </div>
+                <div class="form">
+                    <!-- <fieldset>
+                            <table id="labels">
+                                <tbody>
+                                    <tr>
+                                        <td>First Name</td>
+                                        <td colspan="2"></td>
+                                        <td id="firstName"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Last Name</td>
+                                        <td colspan="2"></td>
+                                        <td id="lastName"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Email Address
+                                        </td>
+                                        <td colspan="2"></td>
+                                        <td id="emailAddress"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Password</td>
+                                        <td colspan="2"></td>
+                                        <td id="password"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table id="inputs">
+                                <tbody>
+                                    <tr>
+                                        <td>First Name</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Last Name</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Email Address</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Password</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                    </fieldset> -->
+                        
+                    <div class="nameRow">
+                        <div class="titleName">
+                            <label for="firstName">First name  * </label>
+                        </div>
+                        <div class="nameInput">
+                            <input type="text" class="blue-input" name="firstName" id="firstName" class="required" autocomplete="off" >
+                            <span></span>
+                            <span class="error">All fields with an * are mandatory.</span>
+                            </div>
+                        </div>
+                        <div class="lastNameRow">
+                            <div class="titleLastName">
+                                <label for="lastName">Last name  * </label>
+                            </div>
+                            <div class="lastNameInput">
+                                <input type="text" class="blue-input" name="lasttName" id="lastName"  class="required" autocomplete="off">
+                                <span class="error">All fields with an * are mandatory.</span>
+                            </div>
+                        </div>
+                        <div class="emailRow">
+                            <div class="titleEmail">
+                                <label for="email">Email address  * </label>
+                            </div>
+                            <div class="emailInput">
+                                <input type="text" class="blue-input" name="email" id="email"  class="required" autocomplete="off">
+                                <span class="error">All fields with an  * are mandatory.</span>
+                            </div>
+                        </div>
+                        <div class="passwordRow">
+                            <div class="titlePassword">
+                                <label for="password" >Password * </label> 
+                            </div>
+                            <div class="passwordInput">
+                                <input type="password" class="blue-input" name="password" id="password" class="required"autocomplete="off">
+                                <span class="error">All fields with an  * are mandatory.</span>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="club"><h3>NESPRESSO CLUB MEMBERSHIP</h3></div>
+                <div class="radio">
+                    <div class="radioButtonNo">
+                        <input type="radio" name="mem" id="noMem" value="N">
+                        <div class="noAnswer">
+                            <label for="no">No, I do not have a Nespresso Club Membership number.</label>
+                        </div>
+                    </div>
+                    <div class="radioButtonYes">
+                        <input type="radio" name="mem" id="mem" value="Y">
+                        <div class="yesAnswer">
+                            <label for="yes">Yes, I do have a Nespresso Club Membership Number.</label>
+                        </div>
+                        
+                        <div class="reveal-if-active">
+                            <div class="memNum">
+                                <div class="memNumTitle">
+                                    <label for="memNum">Membership number* : </label>
+                                </div>
+                                <div class="numInput">
+                                    <input type="number" name="memNum" id="memNum">
+                                </div>
+                            </div>
+                            <div class="postalCode">
+                                <div class="postalCodeTitle">
+                                    <label for="postalcode">My postal code* : </label>
+                                </div>
+                                <div class="postCodeInput">
+                                    <input type="postalCode" name="postalCode" id="postalCode">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="privacy">
+                    <div class="continue">
+                        <p>By clicking on “Continue”, you acknowledge having read Nespresso Privacy Notice.</p>
+                    </div>
+                    <div class="button">
+                        <button type="submit">CONTINUE</button>
+                    </div>
+                </div>
+
+            </div>
+        </form>
+        <div class="bottom">
+            <div class="bottomLogo">
+                <img src="https://www.nespresso.com/_ui/img/flags/fr.png?impolicy=small&imwidth=48" alt="bottomLogo">
+            </div>
+            <label for="countries"></label>
+            <div class="language">
+                <select name="language" id="language">
+                    <option value="Frence">Francais</option>
+                    <option value="English" selected>English</option>
+                </optgroup>
+                </select>
+            </div>
+            <nav>
+                <ul id="topnav">
+                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="#">STORE LOCATOR</a></li>
+                    <li><a href="#">EVENTS</a></li>
+                    <li><a href="#">CAREERS</a></li>
+                    <li><a href="#">PRESS ROOM</a></li>
+                    <li><a href="#">ENTERPRISE DURABLE</a></li>
+                </ul>
+                <ul id="bottomnav">
+                    <li><a href="#">LEGAL</a></li>
+                    <li><a href="#">CODE OF ANTITRUST</a></li>
+                    <li><a href="#">TECHNICAL COMMUNICATION</a></li>
+                    <li><a href="#">CANCELLATION</a></li>
+                    <li><a href="#">COOKIES</a></li>
+                    <li><a href="#">GLOSSARY</a></li>
+                    <li><a href="#">SITEMAP</a></li>
+                </ul>
+                
+             </nav>  
+        </div>
+    </div>
+    <!-- <div class="follow">
+        <div class="social">
+            <div class="followText">
+                <p>Follow Nespresso on</p>
+            </div>
+            <div class="facebook">
+            <img src="https://www.nespresso.com/ecom/medias/sys_master/public/10506387456030/facebook.svg?impolicy=small&imwidth=60" alt="">
+            </div>
+            <div class="twitter">
+                <img src="https://www.nespresso.com/ecom/medias/sys_master/public/10506387587102/twitter.svg?impolicy=small&imwidth=60" alt="twitter">
+            </div>
+            <div class="instagram">
+                <img src="https://www.nespresso.com/ecom/medias/sys_master/public/10694999506974/insta.svg?impolicy=small&imwidth=60" alt="instagram">
+        </div>
+        </div>
+        <div class="topOfPage">
+            <p>Top of the page</p>
+        </div>
+        <div class="legal">
+            <img src="./logo.JPG" alt="logo">
+            <p>Nespresso S.A. 2017</p>
+        </div>
+    </div> -->
+    <script src="errorSubmit.js"></script>
+</body>
+</html>

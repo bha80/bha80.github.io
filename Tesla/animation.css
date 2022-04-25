@@ -1,0 +1,50 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+#wrapper {
+    height: 100vh;
+}
+
+#navbar {
+    background-color: black;
+    height: 105px;
+}
+
+#logo {
+    width: 340px;
+    height: 55px;
+    margin: auto;
+}
+
+#menuitems {
+    text-align: center;
+    padding: 0;
+    margin: 20px 0 0 0;
+    color: white;
+}
+
+#menuitems li {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0 20px;
+    /* position: relative; */
+}
+
+.hoverwrapper {
+    position: absolute;
+    top: -195px;
+    left: 0;
+    background-color: lightgrey;
+    color: black;
+    font-family: sans-serif;
+    height: 300px;
+    width: 100vw;
+    z-index: -10;
+    transition: top 1s;
+}
+
+.hovertrigger:hover+.hoverwrapper {
+    top: 105px;
+}

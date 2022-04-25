@@ -1,0 +1,602 @@
+html {
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+body { 
+    margin: 0;
+    padding: 0;
+    border: 100px solid black;
+    white-space: nowrap; 
+}
+.logo{
+    background-color: black;
+    width: 100%;
+}
+
+.header__logo{
+    width: 180px;
+    height: 50px;
+}
+
+.header {
+    text-align: center;
+    border-bottom:  0px solid black;
+    border-top: 60px solid black;
+    background-color: #f9f9f9;
+}
+
+.middle {
+    border-top: 20px solid black;
+    font-size: small;
+    background-color: #f9f9f9;
+}
+
+.form{
+    display: inline-block;
+    position: relative;
+    border: none;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.middleText {
+    margin-left: 20px;
+}
+
+.club{
+    padding-top: 50px;
+    margin-bottom: 50px;
+    background-color:  lightgray;
+    font-size: medium;
+}
+
+.radioButtonNo, .radioButtonYes, .continue{
+    font-size: small;
+}
+
+.radio{
+    flex-direction: column;
+    display: block;
+}
+
+.club>h3{
+    vertical-align: middle;
+    position: relative; 
+    justify-content: center;
+    padding-bottom: 20px;
+    margin-top: -15px;
+    margin-left: 20px;
+}
+
+.privacy{
+    display: flex;
+    border-top: 10px black;
+    margin-left: 20px;
+}
+
+button[type="submit"]{
+    background-color: green;
+    display: inline-flex;
+    align-items: center; 
+    text-align: center;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    justify-content: center; 
+    text-decoration: none;
+    font-size: 16px;
+    margin-left: 140px;
+    width: 190px;
+    height: 40px;
+}
+
+
+#firstName, #lastName, #email, #password{
+    height:40px;
+    width: 200px;
+    font-size:14pt;
+    display: inline-block;
+    justify-content: center;
+} 
+
+.nameRow, .lastNameRow, .emailRow, .passwordRow{
+    width: 100%;
+    display: flex;
+    vertical-align: middle; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titleName, .titleLastName, .titleEmail, .titlePassword{
+    width: 100%;
+    vertical-align: middle;
+    font-size: small;
+    position: absolute; 
+    margin-left: 20px;
+}
+
+.nameInput, .lastNameInput, .emailInput, .passwordInput{
+    height: 10%;
+    width: 50%;
+    display: inline-block;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+/* input[type=email], input[type=password] , input[type=text]
+{
+    width: 100%;
+    height: 50px;
+    margin-left: 100px;
+}  */
+
+
+ul{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none; 
+}
+
+
+li{
+    display: inline;
+    padding: 10px;
+    font-size: small;
+}
+
+
+
+/* .form {
+    justify-content: center;
+} */
+
+/* .continue{
+    justify-content: center; 
+} */
+
+
+
+#language{
+    height:30px;
+    width: 100px;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+.language, .bottomLogo{
+    display: inline-block;
+}
+
+.bottomLogo{
+    position: absolute; 
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.reveal-if-active {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    font-size: small; 
+    transform: scale(0.8);
+    transition: 0.5s;
+    margin-left: 10px;
+    position: relative;
+    height: 10%;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.memNumTitle, .postalCodeTitle{
+    margin-left: 40px;
+    justify-items: flex-start;
+    height: 10%;
+    width: 50%;
+    display: inline-block;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.numInput, .postCodeInput{
+    margin-left: 100px;
+    justify-items: flex-start;
+    width: 100%;
+}
+    
+.memNumTitle, .postalCodeTitle, .numInput, .postCodeInput{
+    align-content: flex-start;
+}
+
+label {
+    display: block;
+    margin: 0 0 3px 0;
+}
+
+/* input[type=text] {
+    width: 100%;
+} */
+    
+
+input[type="radio"]:checked ~ .reveal-if-active
+{
+  opacity: 1;
+  max-height: 100px;
+  overflow: visible;
+}
+
+.radioButtonNo, .radioButtonYes{
+    margin-left: 10px;
+}
+   
+.noAnswer, .yesAnswer{
+    margin-left: 11px;
+}
+.radioButtonNo, .radioButtonYes, .noAnswer, .yesAnswer{
+    display: flex;
+}
+
+.footer{
+    border-color: slategrey;
+    background-color: #f9f9f9;
+}
+
+.bottom{
+    background-color: rgb(50, 43, 43);
+    color: white;
+    margin-top: 12px;
+    margin-bottom: -17px;
+    border-top: 20px solid black;
+}
+
+.radioButtonYes, .radioButtonNo{
+    position: relative;
+    margin-left: 10px;
+}
+
+nav{
+    justify-content: flex-end;
+}
+
+#topnav, #bottomnav {
+    height: 30px;
+
+}
+#topnav {
+    margin-top: 5px;
+}
+
+#topnav ul li
+   a:link { color: rgb(233, 226, 226);
+    font-size: small;
+    text-decoration: none;
+}
+
+#bottomnav ul li
+   a:link { color: rgb(170, 161, 161);
+    font-size: small;
+    text-decoration: none;
+}
+
+
+.follow{
+    background-color: black;
+}
+
+.followText, .facebook, .twitter, .instagram{
+    display: inline-block;
+    width: auto; 
+    color: white;
+    background-color: black;
+    height: 30%;
+}
+
+.social, .topOfpage, .legal{
+    display: inline-block;
+}
+
+img[alt="instagram"]{
+    width: 30px;
+    height: 30px;
+}
+
+img[alt="logo"]{
+    width: 50px;
+    height: 10px;
+    margin-left: 20px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+input { 
+    border: 1px solid lightgrey; }
+
+span.error {
+    display: none;
+    color: #dd3232;
+    font-size: 12px;
+    width: 210px;
+    /* padding: 0 5px;
+    margin-top: 6px;
+    margin-left: 100px; */
+  }
+  
+  span.display {
+    display: block;
+  }
+  
+  #finalError {
+    width: auto;
+    margin: 0 0 5px 0;
+    padding: 0;
+  }
+
+  label.red {
+    color: red;
+    /* font-size: 1.1em; */
+  }
+  input.red {
+    border: 1px solid red;
+  }
+
+  table {
+    border-collapse: collapse;
+    border: 1px solid black;
+    empty-cells: show;
+    width: 50%;
+    height: 30px;
+    table-layout: fixed;
+    border-spacing: 0;
+}
+
+/* td, th {
+    width: 30px;
+    height: 30px;
+    border: 0.5px solid black;
+} */
+
+#labels, #inputs{
+    display: flexbox;
+}
+.blue-input:focus {
+    background: yellow;
+    color: blue;
+  }
+@media screen and (max-device-width:996px){
+    body {
+        flex-direction: column;
+        /* justify-content: initial; */
+        border: none; 
+        font-size: large;
+        width: 159%;
+        height: 100%;
+        /* overflow-x: hidden; 
+        white-space:nowrap;  */
+        width: 100%;
+    }
+    .logo {
+        height: 10%;
+        width: 158%;
+        border: none;
+
+    }
+    .header {
+        width: 158%;
+        text-align: center;
+        font-size: large;
+        border-bottom: none;
+        border-top: none;
+        flex-wrap: wrap;
+    }
+    .middle {
+    border-top: 10px solid black;
+    width: 158%;
+    font-size: large;
+    }
+    .middleText {
+        width: 60%;
+        height: 80%;
+        /* flex-wrap: wrap; */
+        font-size: large;
+        margin-left: 10px;
+        align-items: center;
+    }
+
+    .form{
+        flex-direction: column;
+        display: inline-block;
+        width: 80%;
+        position: relative;
+        border: none;
+        align-items: center;
+    }
+
+    .form:focus-within {
+        background: lightgray;
+        color: black;
+        transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+      }
+
+    #firstName, #lastName, #email, #password{
+        height:40px;
+        width: 200px;
+        font-size:14pt;
+        display: inline-block;
+        justify-content: center;
+    } 
+
+    input + span {
+        position: relative;
+      }
+      
+      input + span {
+        position: absolute;
+        right: -20px;
+        top: 5px;
+      }
+      
+      input:invalid {
+        border: 2px solid red;
+      }
+      
+      input:invalid + span::before {
+        content: '✖';
+        color: red;
+      }
+      
+      input:valid + span::before {
+        content: '✓';
+        color: green;
+      }
+    
+    .nameRow, .lastNameRow, .emailRow, .passwordRow{
+        width: 100%;
+        display: flex;
+        vertical-align: middle; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .titleName, .titleLastName, .titleEmail, .titlePassword{
+        width: 100%;
+        vertical-align: middle;
+        font-size: small;
+        position: absolute; 
+        margin-left: 20px;
+        font-size: large;
+    }
+    
+    .nameInput, .lastNameInput, .emailInput, .passwordInput{
+        height: 5%;
+        width: 40%;
+        display: inline-block;
+        margin: 0 auto;
+        box-sizing: border-box;
+        transition:border 1s;
+        margin-top:5px;
+        margin-bottom: 5px;
+    }
+
+    .footer{
+        border-color: slategrey;
+        font-size: large;
+        width: 158%;
+    }
+    
+    
+    .club{
+        padding-top: 50px;
+        margin-bottom: 20px;
+        background-color:  lightgray;
+        font-size: large;
+    }
+    
+    .yesAnswer, .memNum, .postal{
+        flex-direction: column;
+        display: block;
+    }
+
+    .memNumTitle, .postalCodeTitle{
+        justify-items: flex-start;
+        height: 10%;
+        width: 50%;
+        display: inline-block;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+
+    .noAnswer, .yesAnswer, .continue>p, .memNumTitle, .postalCodeTitle{
+        font-size: large;
+    }
+
+    
+    .privacy{
+        flex-direction: column;
+        font-size: large;
+        align-items: center;
+    }
+
+    .continue{
+        margin-right: 20px;
+
+    }
+
+    button[type="submit"]{
+        background-color: green;
+        border: none;
+        color: white;
+        height: 10px;
+        margin-left: 12%;
+        padding: 15px 32px;
+    }
+
+    /* nav{
+        height: 220px; 
+        margin-bottom: 100%;
+    } */
+    
+    .bottom{
+        width: 158%;
+        margin-top: 72px;
+        font-size: large;
+    }
+
+    .language{
+        align-items: center;
+    }
+
+    ul{
+        flex-direction: column;
+        align-items: center;
+        font-size: larger;
+    }
+
+    #bottomnav{
+        height: 236px;
+    }
+
+    #topnav{
+        height: 212px;
+    }
+
+    .blue-input:focus {
+        background: yellow;
+        color: blue;
+      }
+
+    /* #firstName, #lastName, #email, #password{
+        height:40px;
+        width: 200px;
+        font-size:14pt;
+        display: inline-block;
+        justify-content: center;
+    } 
+    
+    .nameRow, .lastNameRow, .emailRow, .passwordRow{
+        display: flex;
+        vertical-align: middle; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .titleName, .titleLastName, .titleEmail, .titlePassword{
+        width: 80px;
+        vertical-align: middle;
+        font-size: small;
+        position: absolute; 
+    }
+    
+    .nameInput, .lastNameInput, .emailInput, .passwordInput{
+        height:100px;
+        width: 200px;
+        font-size:12pt;
+    } */
+}   

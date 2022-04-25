@@ -1,0 +1,54 @@
+body{
+    /* margin:0; */
+}
+.main{
+    width: 90%;
+    margin: auto;
+    /* display: flex; */
+}
+h1{
+    margin: auto;
+}
+
+h2{
+    font-size: medium;
+    margin-bottom: 5px;
+}
+
+p{
+    margin-bottom: 5px;
+    font-size: small;
+    flex-wrap: wrap;
+}
+.mainpic{
+    width: 50%;
+}
+
+.mid, .right{
+    width: 25%;
+}
+
+.main>div{
+    /* display: inline-block; */
+    vertical-align: top; 
+    float: left;
+}
+
+img[alt="main"]{
+    width: 550px;
+    height: 350px;
+}
+
+/* .middleMain{
+    width: 50%;
+} */
+
+.mainText { 
+    float: left; 
+    width: 50%; 
+}
+
+.sideText { 
+    float: left; 
+    width: 50%;
+}
